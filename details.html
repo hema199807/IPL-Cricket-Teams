@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Team details</title>
+        <link rel="stylesheet" href="./details.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header id="top-bar">
+            <div id="logo">
+                <a href="./index.html">
+                <img src="./images/logo.png" alt="ipl logo"/>
+                </a>
+            </div>
+            <div>
+                <h1 id="title">IPL Cricket Teams</h1>
+            </div>
+            <div>
+                <button id="add-btn">ADD</button>
+            </div>
+        </header>
+        <main>
+            <section id="team-seaction">
+            <div>
+            <img id="team-logo"/>
+            <h2 id="team-heading"></h2>
+            </div>
+            <div>
+                <h3>Top Batsman :- <span id="Top-Batsman"></span></h3>
+                <h3>Top Bowler :- <span id="Top-Bowler"></span></h3>
+            </div>
+            <div>
+                <h3>Player Count :- <span id="Player-count"></span></h3>
+                <h3>Championship Won Count :- <span id="Championship-count"></span></h3>
+            </div>
+            </section>
+
+            <div id="table-section">
+
+                <form id="form">
+                    <img id="search-icon" src='./images/search-icon.svg' alt="Search Icon" />
+                    <input type="text" placeholder="Enter something" name="search-box" id="search-box" value="" />
+                </form>
+    
+                <div id="table-wrapper">
+    
+                    <div id="table-headers">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="column1">Player</th>
+                                    <th class="column2">FullName</th>
+                                    <th class="column3">Team</th>
+                                    <th class="column4">Price</th>
+                                    <th class="column5">Playing Status</th>
+                                    <th class="column6">Role</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+    
+                    <div id="table-data">
+                        <table>
+                            <tbody id="table-content">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+    
+                </div>
+    
+            </div>
+        </main>
+        <script rel="text/script" src="./details.js"></script>
+    </body>
+</html>

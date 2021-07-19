@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#top-bar{
+    background-image: linear-gradient(to right, pink,white,pink); 
+    width:100%;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left:0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2px 8%;
+    box-shadow: 0 2px 5px #ccc;
+}
+#logo{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#logo >a > img{
+    width:30px;
+}
+#title{
+  
+    font-size: 25px;
+    margin-top:10px;
+    margin-left: 30px;
+    font-weight:700;
+    color:chartreuse;
+    text-shadow: 1px 3px 2px blueviolet;
+}
+  
+main{
+    margin:25% 9% 2% 9%; 
+}
+main section input{
+    border:none;
+    border-bottom: 1px solid black;
+    padding:5px
+}
+#Add-teams{
+    padding:5px 10px;
+    background-color: blue;
+    color:white;
+    border:none;
+    border-radius: 5px;
+}
+#Add-player{
+    padding:5px 10px;
+    background-color: blue;
+    color:white;
+    border:none;
+    border-radius: 5px;
+}
+@media(min-width:600px){
+    #logo >a > img{
+        width:70px;
+    }
+    #title{
+        margin-left: 100px;
+        font-size: 35px;
+    }
+    
+    main{
+        margin:20% 9% 2% 9%; 
+    }
+}
+@media(min-width:991px){
+    #logo >a > img{
+        width:100px;
+    }
+    #title{
+        margin-left: 300px;
+        font-size: 40px;
+    }
+    
+    main{
+        margin:12% 9% 2% 9%; 
+    }
+}

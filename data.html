@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>IPL Cricket Teams</title>
+        <link rel="stylesheet" href="./data.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header id="top-bar">
+            <div id="logo">
+                <a href="./index.html">
+                <img src="./images/logo.png" alt="ipl logo"/>
+                </a>
+            </div>
+            <div>
+                <h1 id="title">IPL Cricket Teams</h1>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h2>Add Team Details</h2>
+                <label for="Tname">Team name:</label>
+                <input type="text" id="Tname" name="Tname" placeholder="Enter Team Name" required><br><br>
+                <label for="teamicon">Team Icon Url:</label>
+                <input type="url" id="teamicon" name="teamicon" placeholder="Enter Team Icon Url" required><br><br>
+                <label for="Tbatsman">Top Batsman Name:</label>
+                <input type="text" id="Tbatsman" name="Tbatsman" placeholder="Enter Top Batsman Name" required><br><br>
+                <label for="Tbowler">Top Bowler Name:</label>
+                <input type="text" id="Tbowler" name="Tbowler" placeholder="Enter Top Bowler Name" required><br><br>
+                <label for="championshipCount">Championship Own Count:</label>
+                <input type="number" id="championshipCount" name="championshipCount" placeholder="Enter Championship Own Count" required><br><br>
+                <button id="Add-teams">Add</button>
+            </section>
+            <section id="playerdetails">
+                <h2>Add Player Details</h2>
+                <label for="Pname">Player name:</label>
+                <input type="text" id="Pname" name="Pname" placeholder="Enter Player Name" required><br><br>
+                <label for="playerImage">Player Image:</label>
+                <input type="url" id="playerImage" name="playerImage" placeholder="Enter Player Image Url" required><br><br>
+                <label for="playerfrom">Player Team Name:</label>
+                <input type="text" id="playerfrom" name="playerfrom" placeholder="Enter Player Team Name" required><br><br>
+                <label for="price">Price:</label>
+                <input type="text" id="price" name="price" placeholder="Enter Price" required><br><br>
+                <label id="status">Playing Status:
+                <label for="playing">
+                    <input type="radio" id="playing" name="playingStatus" value="Playing" required>Playing
+                </label>
+                <label for="on-bench">
+                    <input type="radio" id="on-bench" name="playingStatus" value="On-bench" required>On-bench<br><br>
+                </label>
+                </label>
+                <label for="role">Role:</label>
+                <input type="text" id="role" name="role" placeholder="Enter Batsman/Bowler/All-rounder/Wicket keeper" required><br><br>
+                <button id="Add-player">Add</button>
+            </section>
+        </main>
+        <script rel="text/script" src="./data.js"></script>
+    </body>
+</html>

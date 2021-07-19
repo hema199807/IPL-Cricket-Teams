@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#top-bar{
+    background-image: linear-gradient(to right, pink,white,pink); 
+    width:100%;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2px 8%;
+    box-shadow: 0 2px 5px #ccc;
+}
+#logo{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#logo >a > img{
+    width:30px;
+}
+  #title{
+  
+    font-size: 25px;
+    margin-top:10px;
+    font-weight:700;
+    color:chartreuse;
+    text-shadow: 1px 3px 2px blueviolet;
+  }
+  #add-btn{
+    padding:5px 10px;
+    background-color: blue;
+    color: white;
+    border:none;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  main{
+    margin:25% 9% 2% 9%; 
+}
+main > section{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin: 0 auto;
+}
+#image-wrapper{
+    width:100%;
+}
+#content-wrapper{
+    width:100%;
+    white-space: nowrap;
+    margin-left: 50px;
+}
+#content-wrapper h1{
+    font-size: 30px;
+    color:darkslategrey;
+}
+#content-wrapper h2{
+    font-size: 25px;
+    color:darkslateblue;
+}
+#content-wrapper h3{
+    font-size: 20px;
+    color:deepskyblue;
+}
+#content-wrapper a{
+    text-decoration: none;
+}
+#content-wrapper button{
+    padding:10px 16px;
+    background-color: blue;
+    color: white;
+    border:none;
+    border-radius: 5px;
+}
+@media(min-width:600px){
+    #logo >a > img{
+        width:70px;
+    }
+    #title{
+        font-size: 35px;
+    }
+    #add-btn{
+        padding:10px 20px;
+        font-size: 15px;
+    }
+    main{
+        margin:20% 9% 2% 9%; 
+    }
+    main > section{
+        flex-direction: row;
+        width:70%;
+    }
+}
+@media(min-width:991px){
+    #logo >a > img{
+        width:100px;
+    }
+    #title{
+        font-size: 40px;
+    }
+    #add-btn{
+        padding:10px 20px;
+        font-size: 18px;
+    }
+    main{
+        margin:12% 9% 2% 9%; 
+    }
+}
